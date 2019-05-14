@@ -62,8 +62,8 @@ int main()
                 window.close();
 
 			if (e.type == Event::KeyPressed)
-			  if (e.key.code==Keyboard::Up) rotate=true;
-			  else if (e.key.code==Keyboard::Left) dx=-1;
+              if (e.key.code==Keyboard::Up) rotate=true;
+              if (e.key.code==Keyboard::Left) dx=-1;
 			  else if (e.key.code==Keyboard::Right) dx=1;
 		}
 
