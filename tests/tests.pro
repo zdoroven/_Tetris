@@ -16,7 +16,8 @@ QMAKE_CFLAGS += -fprofile-arcs -ftest-coverage
 LIBS +=-L../../God_Tetris-master/SFML/lib
 LIBS += -lgcov
 
-SOURCES += main.cpp
+SOURCES +=     main.cpp \
+	../app/tetris.cpp
 
 INCLUDEPATH += ../app
 
@@ -28,3 +29,7 @@ CONFIG(debug, debug|release): LIBS += -lsfml-audio-d -lsfml-graphics-d -lsfml-ma
 
 INCLUDEPATH +=../SFML/include
 DEPENDPATH +=../SFML/include
+
+HEADERS +=     \
+	../app/functions.h \
+	simpletest.h

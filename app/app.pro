@@ -3,7 +3,9 @@ CONFIG += console
 CONFIG -= app_bundle
 CONFIG -= qt
 
-SOURCES += main.cpp
+SOURCES += \
+    tetris.cpp \
+    main.cpp
 
 QMAKE_CFLAGS += -Wall -Wextra
 
@@ -23,3 +25,6 @@ DISTFILES += \
     images/background.png \
     images/frame.png \
     images/tiles.png
+
+HEADERS += \
+    functions.h
