@@ -1,0 +1,16 @@
+language:
+  -cpp
+  
+before_instsall:
+  - pip install 
+
+script:
+  - qmake
+  - make
+  -./tests/tests
+  
+after_success:
+  -build-wrapper-linux-x86-64 --out-dir bw-output make clean all
+  
+notifications:
+  email: false
