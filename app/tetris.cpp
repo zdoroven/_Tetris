@@ -40,9 +40,9 @@ int tetris()
 	RenderWindow window(VideoMode(320, 480), "The Game!");
 
     Texture t1,t2,t3;
-	t1.loadFromFile("images/tiles.png");
-	t2.loadFromFile("images/background.png");
-	t3.loadFromFile("images/frame.png");
+    t1.loadFromFile("images/tiles.png");
+    t2.loadFromFile("images/background.png");
+    t3.loadFromFile("images/frame.png");
 
 	Sprite s(t1), background(t2), frame(t3);
 
@@ -126,7 +126,7 @@ int tetris()
     dx=0; rotate=0; delay=0.3;
 
     /////////draw//////////
-    window.clear(Color::White);	
+    window.clear(Color::White);
     window.draw(background);
 		  
 	for (int i=0;i<M;i++)
