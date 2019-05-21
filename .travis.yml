@@ -1,5 +1,5 @@
 language:
-  -cpp
+  - cpp
   
 before_instsall:
   - pip install 
