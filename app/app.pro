@@ -4,12 +4,9 @@ CONFIG -= qt
 
 SOURCES += \
     tetris.cpp \
-    main.cpp \
-    main.cpp \
-    tetris.cpp
+    main.cpp
 
 HEADERS += \
-    functions.h \
     functions.h
 
 QMAKE_CFLAGS += -Wall -Wextra
